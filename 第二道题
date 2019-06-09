@@ -1,1 +1,29 @@
-肥肥肥肥
+#include<iostream>
+using namespace std;
+
+public class Co 
+    {
+    private static final String X = null;
+    public Co() {
+        System.out.println("两数相乘求积:");
+    }
+    public void mul(int X,int d) {       //定义方法(int X,int d)
+
+        System.out.println("两个整数:"+X+"*"+d+"="+X*d);
+    }
+    public void mul(int X,float y) {      //定义方法(int X,float y)方法重载
+        System.out.println("一个整型,一个单精度浮点数:"+X+"*"+y+"="+X*y);
+    }
+    public void mul(float X,float y) {    //定义方法(float X,float y)方法重载
+        System.out.println("两个单精度浮点数:"+X+"*"+y+"="+X*y);
+    }
+
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+        Co c=new Co();
+        c.mul(3, 2);
+        c.mul(3,2.5f);
+        c.mul(3.0f,2.5f);
+
+    }
+}
